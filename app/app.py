@@ -281,7 +281,7 @@ with st.form("form_predicao"):
 
     c7, c8 = st.columns(2)
     with c7:
-        num_notas_disponiveis = st.number_input("Número de notas disponíveis", min_value=0, max_value=10, value=3, step=1)
+        num_notas_disponiveis = st.number_input("Número de notas disponíveis", min_value=0, max_value=3, value=3, step=1)
     with c8:
         media_notas_disponiveis_txt = st.text_input("Média das notas disponíveis", value="6.8")
 
