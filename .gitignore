@@ -1,0 +1,25 @@
+# Python / Ambientes
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+.env
+.venv/
+venv/
+ENV/
+
+# Jupyter / Colab
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# IDEs / Editores
+.vscode/
+.idea/
+
+# Logs temporários
+*.log
