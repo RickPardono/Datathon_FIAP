@@ -267,15 +267,15 @@ with st.form("form_predicao"):
     c4, c5, c6 = st.columns(3)
 
     with c4:
-        ian = st.number_input("IAN atual", min_value=-10.0, max_value=10.0, value=5.0, step=0.1)
-        iaa_txt = st.text_input("IAA atual (deixe em branco se ausente)", value="7.0")
-        ieg_txt = st.text_input("IEG atual (deixe em branco se ausente)", value="8.0")
+        ian = st.selectbox("IAN atual", options=[0.0, 2.5, 5.0, 10.0], index=2)
+        iaa_txt = st.text_input("IAA atual", value="7.0")
+        ieg_txt = st.text_input("IEG atual", value="8.0")
     with c5:
-        ips_txt = st.text_input("IPS atual (deixe em branco se ausente)", value="6.0")
-        ida_txt = st.text_input("IDA atual (deixe em branco se ausente)", value="6.5")
-        ipv_txt = st.text_input("IPV atual (deixe em branco se ausente)", value="7.0")
+        ips_txt = st.text_input("IPS atual", value="6.0")
+        ida_txt = st.text_input("IDA atual", value="6.5")
+        ipv_txt = st.text_input("IPV atual", value="7.0")
     with c6:
-        inde_txt = st.text_input("INDE atual (deixe em branco se ausente)", value="7.0")
+        inde_txt = st.text_input("INDE atual", value="7.0")
         defasagem = st.number_input("Defasagem atual", min_value=-10.0, max_value=10.0, value=-1.0, step=1.0)
         num_avaliacoes = st.number_input("Número de avaliações", min_value=0, max_value=20, value=4, step=1)
 
@@ -296,7 +296,7 @@ with st.form("form_predicao"):
         ips_prev_txt = st.text_input("IPS anterior", value="5.8")
     with c11:
         iaa_prev_txt = st.text_input("IAA anterior", value="6.5")
-        ian_prev = st.number_input("IAN anterior", min_value=-10.0, max_value=10.0, value=5.0, step=0.1)
+        ian_prev = st.selectbox("IAN anterior", options=[0.0, 2.5, 5.0, 10.0], index=2)
     with c12:
         inde_prev_txt = st.text_input("INDE anterior", value="6.7")
         defasagem_prev = st.number_input("Defasagem anterior", min_value=-10.0, max_value=10.0, value=-1.0, step=1.0)
