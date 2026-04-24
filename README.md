@@ -124,7 +124,7 @@ Principais etapas:
 
 ### 🏆 Modelo Final Selecionado:
 
-XGBoost
+**XGBoost**
 
 O modelo final foi escolhido com base no melhor desempenho preditivo, apresentando:
 
