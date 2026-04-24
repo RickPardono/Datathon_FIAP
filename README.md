@@ -202,5 +202,7 @@ streamlit run app/app.py
 ## 👤 Autor
 
 Ricardo Pardono
+
 rm365874
+
 Contato: rpardono@gmail.com
