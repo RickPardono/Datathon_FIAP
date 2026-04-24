@@ -118,6 +118,8 @@ Principais etapas:
 
 ### 🏆 Modelo Final Selecionado:
 
+XGBoost
+
 O modelo final foi escolhido com base no melhor desempenho preditivo, apresentando:
 
 • Boa capacidade de generalização;
@@ -125,6 +127,8 @@ O modelo final foi escolhido com base no melhor desempenho preditivo, apresentan
 • Capacidade de capturar padrões não lineares;
 
 • Melhor identificação de alunos em risco.
+
+Foi realizada a Validação Cruzada Temporal e Otimização com GridSearch
 
 ### 🔥 Resultados do Modelo:
 
