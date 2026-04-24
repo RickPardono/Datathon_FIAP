@@ -15,12 +15,46 @@ Base educacional fornecida pela ONG Passos Mágicos (2022–2024)
 **Local:** data/raw
 
 Contém informações como:
+• Indicadores acadêmicos (IDA, INDE);
+• Engajamento (IEG);
+• Avaliação psicossocial (IPS);
+• Avaliação psicopedagógica (IPP);
+• Autoavaliação (IAA);
+• Indicador de defasagem (IAN);
+• Evolução do aluno (IPV);
+• Dados demográficos e institucionais.
 
-• Indicadores acadêmicos (IDA, INDE)
-• Engajamento (IEG)
-• Avaliação psicossocial (IPS)
-• Avaliação psicopedagógica (IPP)
-• Autoavaliação (IAA)
-• Indicador de defasagem (IAN)
-• Evolução do aluno (IPV)
-• Dados demográficos e institucionais
+## 🔧 Feature Engineering
+
+Foram criadas variáveis derivadas para melhorar a capacidade preditiva:
+
+• Variáveis temporais (valores anteriores dos indicadores – *_prev);
+• Variação dos indicadores (deltas);
+• Tempo de permanência no programa;
+• Score de risco exploratório (EDA);
+• Flags de valores ausentes.
+
+## 🎯 Variável Alvo (Target)
+target_risco_defasagem = 1 → aluno em risco de defasagem futura  
+target_risco_defasagem = 0 → aluno sem risco
+Criada a partir da defasagem no período seguinte:
+• O modelo prevê se o aluno estará em situação de defasagem no próximo ano.
+
+## 🧪 Estrutura do Repositório
+Datathon_FIAP/
+├── .streamlit/
+├── app/
+│   └── app.py
+├── data/
+│   ├── processed/
+│   └── raw/
+├── models/
+│   └── model.joblib
+├── notebooks/
+│   ├── 00_data_preparation.ipynb
+│   ├── 01_eda.ipynb
+│   └── 02_modeling.ipynb
+├── storytelling/
+│   └── Datathon_FIAP.pptx
+├── README.md
+├── requirements.txt
