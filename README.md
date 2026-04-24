@@ -177,7 +177,8 @@ git clone https://github.com/SEU_USUARIO/Datathon_FIAP.git
 
 cd Datathon_FIAP
 
-🔹 3. Criar ambiente virtual
+🔹 3. Criar ambiente virtual:
+
 python -m venv venv
 
 Ativar:
@@ -191,8 +192,11 @@ No Mac/Linux:
 source venv/bin/activate
 
 🔹 4. Instalar dependências:
+
 pip install -r requirements.txt
+
 🔹 5. Executar a aplicação:
+
 streamlit run app/app.py
 
 ## 👤 Autor
