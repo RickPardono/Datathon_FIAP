@@ -61,3 +61,142 @@ Criada a partir da defasagem no período seguinte:
 
 ## 🧪 Estrutura do Repositório
 <img width="601" height="399" alt="Captura de tela 2026-04-24 135317" src="https://github.com/user-attachments/assets/23f95ebb-a268-4e9f-87f1-cb9f268ab29e" />
+
+## 🧹 Preparação da Base de Dados (notebook /00_data_preparation.ipynb)
+
+• Padronização dos nomes das colunas;
+
+• Consolidação das três planilhas em uma base única;
+
+• Correção de problemas de tipagem de dados;
+
+• Tratamento de valores especiais ;
+
+• Padronização de variáveis categóricas;
+
+• Criação de variáveis derivadas de fase, defasagem e IAN.
+
+A base final tratada foi salva em: data/processed/base_tratada.csv
+
+## 🔍 Análise Exploratória (notebook/01_eda.ipynb)
+
+• Análise dos indicadores educacionais;
+
+• Evolução do desempenho ao longo do tempo;
+
+• Relação entre engajamento, desempenho e evolução;
+
+• Avaliação da defasagem educacional (IAN);
+
+• Análise de correlação entre variáveis;
+
+• Identificação de padrões e insights.
+
+## 🤖 Modelagem Preditiva (notebook/02_modeling.ipynb)
+
+### 🧱 Pré-processamento dos dados
+
+Foi construído um pipeline utilizando ColumnTransformer para garantir consistência entre treino, teste e aplicação em produção.
+
+Principais etapas:
+
+• Imputação de valores ausentes;
+
+• Padronização de variáveis numéricas;
+
+• Codificação de variáveis categóricas;
+
+• Tratamento de variáveis ordinais.
+
+### 🔍 Modelos Testados:
+
+• Regressão Logística (baseline);
+
+• Random Forest;
+
+• XGBoost.
+
+### 🏆 Modelo Final Selecionado:
+
+O modelo final foi escolhido com base no melhor desempenho preditivo, apresentando:
+
+• Boa capacidade de generalização;
+
+• Capacidade de capturar padrões não lineares;
+
+• Melhor identificação de alunos em risco.
+
+### 🔥 Resultados do Modelo:
+
+• AUC: 0.85
+
+• Accuracy: 78%
+
+• Precision: 71%
+
+• Recall: 77%
+
+### 📌 Modelo salvo em:
+models/model.joblib
+
+## 🌐 Aplicação Web – Streamlit
+
+Aplicação interativa desenvolvida para simulação de risco educacional:
+
+• Inserção de dados do aluno;
+
+• Cálculo automático da probabilidade de risco;
+
+• Interface amigável para uso operacional;
+
+• Apoio à tomada de decisão em tempo real.
+
+Link da aplicação: 
+
+## 🎥 Vídeo de Apresentação
+Link do vídeo
+
+## 📊 Storytelling
+
+Apresentação analítica e gerencial disponível em:
+
+storytelling/Datathon_FIAP.pptx
+
+## 🚀 Como Executar o Projeto Localmente
+🔹 1. Pré-requisitos:
+
+• Python 3.11
+
+• pip atualizado
+
+• Git instalado
+
+🔹 2. Clonar o repositório:
+
+git clone https://github.com/SEU_USUARIO/Datathon_FIAP.git
+
+cd Datathon_FIAP
+
+🔹 3. Criar ambiente virtual
+python -m venv venv
+
+Ativar:
+
+No Windows:
+
+venv\Scripts\activate
+
+No Mac/Linux:
+
+source venv/bin/activate
+
+🔹 4. Instalar dependências:
+pip install -r requirements.txt
+🔹 5. Executar a aplicação:
+streamlit run app/app.py
+
+## 👤 Autor
+
+Ricardo Pardono
+rm365874
+Contato: rpardono@gmail.com
