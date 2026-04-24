@@ -60,20 +60,4 @@ Criada a partir da defasagem no período seguinte:
 • O modelo prevê se o aluno estará em situação de defasagem no próximo ano.
 
 ## 🧪 Estrutura do Repositório
-Datathon_FIAP/
-├── .streamlit/
-├── app/
-│   └── app.py
-├── data/
-│   ├── processed/
-│   └── raw/
-├── models/
-│   └── model.joblib
-├── notebooks/
-│   ├── 00_data_preparation.ipynb
-│   ├── 01_eda.ipynb
-│   └── 02_modeling.ipynb
-├── storytelling/
-│   └── Datathon_FIAP.pptx
-├── README.md
-├── requirements.txt
+<img width="601" height="399" alt="Captura de tela 2026-04-24 135317" src="https://github.com/user-attachments/assets/23f95ebb-a268-4e9f-87f1-cb9f268ab29e" />
