@@ -183,11 +183,11 @@ python -m venv venv
 
 Ativar:
 
-No Windows:
+**No Windows:**
 
 venv\Scripts\activate
 
-No Mac/Linux:
+**No Mac/Linux:**
 
 source venv/bin/activate
 
@@ -199,10 +199,10 @@ pip install -r requirements.txt
 
 streamlit run app/app.py
 
-## 👤 Autor
+## 👤 Autor do Projeto
 
 Ricardo Pardono
 
 rm365874
 
-Contato: rpardono@gmail.com
+**Contato:** rpardono@gmail.com
