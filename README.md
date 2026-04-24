@@ -53,11 +53,15 @@ Foram criadas variáveis derivadas para melhorar a capacidade preditiva:
 • Flags de valores ausentes.
 
 ## 🎯 Variável Alvo (Target)
-target_risco_defasagem = 1 → aluno em risco de defasagem futura  
-target_risco_defasagem = 0 → aluno sem risco
-Criada a partir da defasagem no período seguinte:
+A variável alvo foi construída com base na evolução da defasagem ao longo do tempo:
 
-• O modelo prevê se o aluno estará em situação de defasagem no próximo ano.
+• defasagem_futuro: obtida com shift(-1) por aluno  
+
+• target_risco_defasagem = 1 → quando há piora (defasagem_futuro < 0)  
+
+• target_risco_defasagem = 0 → caso contrário 
+
+O modelo prevê se o aluno estará em situação de defasagem no próximo ano.
 
 ## 🧪 Estrutura do Repositório
 <img width="601" height="399" alt="Captura de tela 2026-04-24 135317" src="https://github.com/user-attachments/assets/23f95ebb-a268-4e9f-87f1-cb9f268ab29e" />
@@ -106,7 +110,9 @@ Principais etapas:
 
 • Codificação de variáveis categóricas;
 
-• Tratamento de variáveis ordinais.
+• Tratamento de variáveis ordinais;
+
+• Separação dos dados em treino e teste respeitando a ordem temporal.
 
 ### 🔍 Modelos Testados:
 
@@ -122,7 +128,7 @@ XGBoost
 
 O modelo final foi escolhido com base no melhor desempenho preditivo, apresentando:
 
-• Boa capacidade de generalização;
+• Melhor equilíbrio entre precisão e recall na identificação de alunos em risco;
 
 • Capacidade de capturar padrões não lineares;
 
@@ -153,7 +159,9 @@ Aplicação interativa desenvolvida para simulação de risco educacional:
 
 • Interface amigável para uso operacional;
 
-• Apoio à tomada de decisão em tempo real.
+• Apoio à tomada de decisão em tempo real;
+
+• A aplicação transforma o modelo analítico em uma solução prática para uso no dia a dia da ONG.
 
 Link da aplicação: 
 
