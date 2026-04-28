@@ -1,1 +1,7 @@
+LINKS DA ENTREGA (Datathon):
 
+**Link do Github:**  https://github.com/RickPardono/Datathon_FIAP
+
+**Link da aplicação em Streamlit:**  https://datathonfiap-ysmwa6qx2h7mu9jvkmtznz.streamlit.app/
+
+**Link da apresentação:**  https://youtu.be/AkJr9OH85e8
