@@ -163,10 +163,10 @@ Aplicação interativa desenvolvida para simulação de risco educacional:
 
 • A aplicação transforma o modelo analítico em uma solução prática para uso no dia a dia da ONG.
 
-Link da aplicação: 
+Link da aplicação: https://datathonfiap-ysmwa6qx2h7mu9jvkmtznz.streamlit.app/
 
 ## 🎥 Vídeo de Apresentação
-Link do vídeo
+Link do vídeo: https://youtu.be/AkJr9OH85e8
 
 ## 📊 Storytelling
 
