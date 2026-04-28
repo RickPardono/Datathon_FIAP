@@ -166,7 +166,7 @@ Aplicação interativa desenvolvida para simulação de risco educacional:
 Link da aplicação: https://datathonfiap-ysmwa6qx2h7mu9jvkmtznz.streamlit.app/
 
 ## 🎥 Vídeo de Apresentação
-Link do vídeo: https://youtu.be/AkJr9OH85e8
+Link do vídeo: https://www.youtube.com/watch?v=AkJr9OH85e8
 
 ## 📊 Storytelling
 
