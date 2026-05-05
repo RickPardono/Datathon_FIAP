@@ -3,7 +3,7 @@
 ## 📋 Sobre o Projeto
 Este projeto foi desenvolvido como parte do Datathon - Fase 5, da Pós Tech em Data Analytics da FIAP, com o objetivo de analisar dados educacionais da ONG Passos Mágicos para:
 
-•  Analisar indicadores educacionais (IAN, IDA, IEG, IAA, IPS, IPP, IPV);
+•  Avaliar indicadores educacionais (IAN, IDA, IEG, IAA, IPS, IPP, IPV);
 
 •  Avaliar o desempenho e evolução dos alunos ao longo do tempo;
 
